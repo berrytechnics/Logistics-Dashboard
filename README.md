@@ -1,42 +1,44 @@
 # Logistics Dashboard
 
-A modern, responsive logistics dashboard built with Next.js, shadcn/ui, and Tailwind CSS. Track shipments, monitor inventory levels, and analyze logistics data with a beautiful and intuitive interface.
+A modern, responsive logistics dashboard built with Next.js 15, shadcn/ui, and Tailwind CSS. Track shipments, monitor inventory levels, and analyze logistics data with a beautiful and intuitive interface.
 
-## 🚀 Features
+## Features
 
 - **Modern UI/UX**: Clean, responsive design with dark mode support
-- **Real-time Analytics**: Track shipments, inventory, and revenue metrics
-- **Search & Filter**: Find shipments and data quickly
+- **Real-time Analytics**: Track shipments, inventory, and revenue metrics with interactive charts
+- **Search & Filter**: Find shipments and data quickly with advanced filtering
 - **Inventory Management**: Monitor stock levels with status indicators
-- **Shipment Tracking**: View recent shipments with status updates
+- **Shipment Tracking**: View recent shipments with status updates and ETAs
 - **Mobile Responsive**: Works seamlessly on all devices
 - **Docker Containerization**: Easy deployment with Docker Compose
-- **Mock API**: JSON Server provides realistic test data
+- **Mock API**: JSON Server provides realistic test data with 44+ sample records
+- **Single Command Startup**: Start everything with one script
 
-## 🛠️ Technology Stack
+## Technology Stack
 
-- **Framework**: Next.js 14 with App Router
-- **UI Components**: shadcn/ui
-- **Styling**: Tailwind CSS
-- **Language**: TypeScript
-- **Icons**: Heroicons (SVG)
+- **Framework**: Next.js 15.4.1 with App Router
+- **UI Components**: shadcn/ui with Radix UI primitives
+- **Styling**: Tailwind CSS 4.0
+- **Language**: TypeScript 5
+- **Icons**: Lucide React
 - **Fonts**: Geist Sans & Geist Mono
+- **Charts**: Recharts for data visualization
 - **Containerization**: Docker & Docker Compose
-- **Mock API**: JSON Server
+- **Mock API**: JSON Server with comprehensive test data
 
-## 🐳 Docker Setup (Recommended)
+## Docker Setup (Recommended)
 
-### Quick Start with Docker
+### Quick Start with Single Command
 
-1. **Start all services with one command**:
+1. **Start everything with one command**:
    ```bash
    ./start-dev.sh
    ```
 
 2. **Access the application**:
-   - 📊 **Dashboard**: http://localhost:3000
-   - 🔌 **API**: http://localhost:3001
-   - 📚 **API Documentation**: http://localhost:3001
+   - **Dashboard**: http://localhost:3000
+   - **API**: http://localhost:3001
+   - **API Documentation**: http://localhost:3001
 
 3. **Stop all services**:
    ```bash
@@ -81,7 +83,7 @@ docker-compose down
 docker-compose build --no-cache
 ```
 
-## 📦 Local Development Setup
+## Local Development Setup
 
 If you prefer to run without Docker:
 
@@ -102,14 +104,14 @@ If you prefer to run without Docker:
 
 4. **Open your browser** and navigate to [http://localhost:3000](http://localhost:3000)
 
-## 🎨 Available Scripts
+## Available Scripts
 
-- `npm run dev` - Start development server
+- `npm run dev` - Start development server with Turbopack
 - `npm run build` - Build for production
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Logistics-Dashboard/
@@ -119,26 +121,33 @@ Logistics-Dashboard/
 │   │   ├── layout.tsx       # Root layout
 │   │   └── page.tsx         # Dashboard page
 │   ├── components/
+│   │   ├── charts/          # Chart components
+│   │   │   ├── delivery-performance-chart.tsx
+│   │   │   ├── inventory-chart.tsx
+│   │   │   ├── revenue-chart.tsx
+│   │   │   └── shipment-chart.tsx
 │   │   └── ui/              # shadcn/ui components
 │   └── lib/
 │       ├── utils.ts         # Utility functions
 │       └── api.ts           # API service
 ├── mock-api/
-│   └── db.json              # Mock API data
+│   └── db.json              # Mock API data (50+ records)
 ├── public/                  # Static assets
 ├── docker-compose.yml       # Docker services
 ├── Dockerfile               # Production build
 ├── Dockerfile.dev           # Development build
 ├── docker-scripts.sh        # Docker helper scripts
+├── start-dev.sh            # Single command startup
+├── stop-dev.sh             # Single command shutdown
 └── components.json          # shadcn/ui configuration
 ```
 
-## 🔌 Mock API Endpoints
+## Mock API Endpoints
 
-The application includes a comprehensive mock API with the following endpoints:
+The application includes a comprehensive mock API with 44+ sample records and the following endpoints:
 
 ### Shipments
-- `GET /shipments` - Get all shipments
+- `GET /shipments` - Get all shipments (15 records)
 - `GET /shipments/:id` - Get specific shipment
 - `POST /shipments` - Create new shipment
 - `PATCH /shipments/:id` - Update shipment
@@ -147,7 +156,7 @@ The application includes a comprehensive mock API with the following endpoints:
 - `GET /shipments?q=:query` - Search shipments
 
 ### Inventory
-- `GET /inventory` - Get all inventory items
+- `GET /inventory` - Get all inventory items (15 records)
 - `GET /inventory/:id` - Get specific item
 - `PATCH /inventory/:id` - Update inventory item
 
@@ -155,11 +164,11 @@ The application includes a comprehensive mock API with the following endpoints:
 - `GET /analytics` - Get analytics data
 
 ### Customers
-- `GET /customers` - Get all customers
+- `GET /customers` - Get all customers (10 records)
 - `GET /customers/:id` - Get specific customer
 
 ### Carriers
-- `GET /carriers` - Get all carriers
+- `GET /carriers` - Get all carriers (4 records)
 - `GET /carriers/:id` - Get specific carrier
 
 ### API Features
@@ -168,8 +177,9 @@ The application includes a comprehensive mock API with the following endpoints:
 - **Search and filtering** capabilities
 - **Real-time updates** when data changes
 - **RESTful design** following best practices
+- **Comprehensive test data** with realistic logistics scenarios
 
-## 🎯 Dashboard Features
+## Dashboard Features
 
 ### Header Section
 - Dashboard title and description
@@ -186,11 +196,17 @@ The application includes a comprehensive mock API with the following endpoints:
 - **Delivered**: Successfully delivered shipments
 - **Revenue**: Financial performance tracking
 
+### Interactive Charts
+- **Shipment Performance**: Track delivery times and success rates
+- **Revenue Trends**: Monitor financial performance over time
+- **Inventory Levels**: Visualize stock levels and trends
+- **Delivery Performance**: Analyze carrier and route performance
+
 ### Data Sections
 - **Recent Shipments**: Latest shipments with status and ETA
 - **Inventory Overview**: Stock levels with status indicators (Good/Low/Out)
 
-## 🎨 Customization
+## Customization
 
 ### Adding New Components
 To add more shadcn/ui components:
@@ -199,19 +215,19 @@ npx shadcn@latest add <component-name>
 ```
 
 ### Styling
-The dashboard uses Tailwind CSS with a custom color scheme. Modify `src/app/globals.css` for global styles.
+The dashboard uses Tailwind CSS 4.0 with a custom color scheme. Modify `src/app/globals.css` for global styles.
 
 ### Data Integration
-The API service in `src/lib/api.ts` provides a clean interface for connecting to the mock API. Replace the mock API with real backend services by updating the `API_BASE_URL` environment variable.
+The API service in `src/lib/api.ts` provides a clean interface for connecting to the mock API. Replace the mock API with real backend services by updating the `NEXT_PUBLIC_API_URL` environment variable in your Docker configuration or local environment.
 
-## 🌙 Dark Mode
+## Dark Mode
 
 The dashboard automatically supports dark mode based on system preferences. The design includes:
 - Dark backgrounds and text colors
 - Proper contrast ratios
 - Consistent theming across all components
 
-## 📱 Responsive Design
+## Responsive Design
 
 The dashboard is fully responsive with breakpoints for:
 - Mobile (320px+)
@@ -219,7 +235,7 @@ The dashboard is fully responsive with breakpoints for:
 - Desktop (1024px+)
 - Large screens (1280px+)
 
-## 🔧 Development
+## Development
 
 ### Code Style
 - TypeScript for type safety
@@ -230,6 +246,7 @@ The dashboard is fully responsive with breakpoints for:
 - Reusable shadcn/ui components
 - Consistent design patterns
 - Accessible markup
+- Interactive chart components
 
 ### API Integration
 - Type-safe API service
@@ -237,7 +254,7 @@ The dashboard is fully responsive with breakpoints for:
 - Loading states
 - Real-time data updates
 
-## 🚀 Deployment
+## Deployment
 
 ### Docker Deployment
 1. Build the production image:
@@ -256,7 +273,7 @@ The app can be deployed to any platform that supports Next.js:
 - Railway
 - DigitalOcean App Platform
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -285,21 +302,25 @@ kill -9 <PID>
 - Check API logs: `./docker-scripts.sh api-logs`
 - Verify API is accessible: `curl http://localhost:3001/shipments`
 
-## 📄 License
+**Startup script issues**:
+- Make scripts executable: `chmod +x start-dev.sh stop-dev.sh`
+- Check script permissions: `ls -la *.sh`
+
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
 4. Submit a pull request
 
-## 📞 Support
+## Support
 
 For questions or support, please open an issue in the repository.
 
 ---
 
-Built with ❤️ using Next.js, shadcn/ui, Tailwind CSS, and Docker
+Built with Next.js 15, shadcn/ui, Tailwind CSS 4, and Docker
