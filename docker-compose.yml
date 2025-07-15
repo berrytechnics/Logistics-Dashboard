@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  # Next.js Application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_API_URL=http://localhost:3001
+    depends_on:
+      - api
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev
+    networks:
+      - logistics-network
+    restart: unless-stopped
+
+  # Mock API using JSON Server
+  api:
+    image: node:18-alpine
+    ports:
+      - "3001:3001"
+    working_dir: /app
+    command: >
+      sh -c "npm install -g json-server &&
+              json-server --watch /app/mock-api/db.json --port 3001 --host 0.0.0.0"
+    volumes:
+      - ./mock-api:/app/mock-api
+    networks:
+      - logistics-network
+    restart: unless-stopped
+
+networks:
+  logistics-network:
+    driver: bridge 

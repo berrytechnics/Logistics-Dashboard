@@ -1,0 +1,734 @@
+{
+  "shipments": [
+    {
+      "id": "SH-001",
+      "trackingNumber": "TN123456789",
+      "origin": "Los Angeles, CA",
+      "destination": "New York, NY",
+      "status": "In Transit",
+      "shippedDate": "2024-01-15",
+      "estimatedDelivery": "2024-01-18",
+      "actualDelivery": null,
+      "weight": 25.5,
+      "dimensions": "24x18x12",
+      "carrier": "FedEx",
+      "priority": "Standard",
+      "customer": "Acme Corp",
+      "items": [
+        {
+          "id": "ITEM-001",
+          "name": "Widget A",
+          "quantity": 10,
+          "unitPrice": 15.99
+        }
+      ]
+    },
+    {
+      "id": "SH-002",
+      "trackingNumber": "TN123456790",
+      "origin": "Chicago, IL",
+      "destination": "Los Angeles, CA",
+      "status": "Delivered",
+      "shippedDate": "2024-01-14",
+      "estimatedDelivery": "2024-01-17",
+      "actualDelivery": "2024-01-17",
+      "weight": 18.2,
+      "dimensions": "20x16x10",
+      "carrier": "UPS",
+      "priority": "Express",
+      "customer": "TechStart Inc",
+      "items": [
+        {
+          "id": "ITEM-002",
+          "name": "Widget B",
+          "quantity": 5,
+          "unitPrice": 29.99
+        }
+      ]
+    },
+    {
+      "id": "SH-003",
+      "trackingNumber": "TN123456791",
+      "origin": "Miami, FL",
+      "destination": "Chicago, IL",
+      "status": "Out for Delivery",
+      "shippedDate": "2024-01-15",
+      "estimatedDelivery": "2024-01-16",
+      "actualDelivery": null,
+      "weight": 12.8,
+      "dimensions": "16x14x8",
+      "carrier": "USPS",
+      "priority": "Standard",
+      "customer": "Global Solutions",
+      "items": [
+        {
+          "id": "ITEM-003",
+          "name": "Widget C",
+          "quantity": 8,
+          "unitPrice": 12.50
+        }
+      ]
+    },
+    {
+      "id": "SH-004",
+      "trackingNumber": "TN123456792",
+      "origin": "Seattle, WA",
+      "destination": "Boston, MA",
+      "status": "In Transit",
+      "shippedDate": "2024-01-16",
+      "estimatedDelivery": "2024-01-19",
+      "actualDelivery": null,
+      "weight": 32.1,
+      "dimensions": "28x22x16",
+      "carrier": "DHL",
+      "priority": "Express",
+      "customer": "Innovation Labs",
+      "items": [
+        {
+          "id": "ITEM-004",
+          "name": "Widget D",
+          "quantity": 15,
+          "unitPrice": 45.00
+        }
+      ]
+    },
+    {
+      "id": "SH-005",
+      "trackingNumber": "TN123456793",
+      "origin": "Denver, CO",
+      "destination": "Phoenix, AZ",
+      "status": "Delivered",
+      "shippedDate": "2024-01-13",
+      "estimatedDelivery": "2024-01-15",
+      "actualDelivery": "2024-01-15",
+      "weight": 8.5,
+      "dimensions": "12x10x6",
+      "carrier": "FedEx",
+      "priority": "Standard",
+      "customer": "Mountain Tech",
+      "items": [
+        {
+          "id": "ITEM-005",
+          "name": "Widget E",
+          "quantity": 3,
+          "unitPrice": 75.00
+        }
+      ]
+    },
+    {
+      "id": "SH-006",
+      "trackingNumber": "TN123456794",
+      "origin": "Houston, TX",
+      "destination": "Detroit, MI",
+      "status": "Delivered",
+      "shippedDate": "2024-01-12",
+      "estimatedDelivery": "2024-01-15",
+      "actualDelivery": "2024-01-14",
+      "weight": 45.2,
+      "dimensions": "30x24x18",
+      "carrier": "UPS",
+      "priority": "Express",
+      "customer": "Auto Parts Plus",
+      "items": [
+        {
+          "id": "ITEM-006",
+          "name": "Engine Component X",
+          "quantity": 2,
+          "unitPrice": 125.00
+        }
+      ]
+    },
+    {
+      "id": "SH-007",
+      "trackingNumber": "TN123456795",
+      "origin": "Atlanta, GA",
+      "destination": "San Francisco, CA",
+      "status": "In Transit",
+      "shippedDate": "2024-01-17",
+      "estimatedDelivery": "2024-01-20",
+      "actualDelivery": null,
+      "weight": 22.8,
+      "dimensions": "20x16x12",
+      "carrier": "FedEx",
+      "priority": "Standard",
+      "customer": "Tech Solutions",
+      "items": [
+        {
+          "id": "ITEM-007",
+          "name": "Circuit Board Y",
+          "quantity": 12,
+          "unitPrice": 35.50
+        }
+      ]
+    },
+    {
+      "id": "SH-008",
+      "trackingNumber": "TN123456796",
+      "origin": "Portland, OR",
+      "destination": "Austin, TX",
+      "status": "Delivered",
+      "shippedDate": "2024-01-11",
+      "estimatedDelivery": "2024-01-14",
+      "actualDelivery": "2024-01-13",
+      "weight": 15.3,
+      "dimensions": "18x14x10",
+      "carrier": "USPS",
+      "priority": "Standard",
+      "customer": "Green Energy Co",
+      "items": [
+        {
+          "id": "ITEM-008",
+          "name": "Solar Panel Z",
+          "quantity": 4,
+          "unitPrice": 89.99
+        }
+      ]
+    },
+    {
+      "id": "SH-009",
+      "trackingNumber": "TN123456797",
+      "origin": "Las Vegas, NV",
+      "destination": "Nashville, TN",
+      "status": "Delayed",
+      "shippedDate": "2024-01-14",
+      "estimatedDelivery": "2024-01-17",
+      "actualDelivery": null,
+      "weight": 28.7,
+      "dimensions": "24x20x14",
+      "carrier": "DHL",
+      "priority": "Express",
+      "customer": "Entertainment Corp",
+      "items": [
+        {
+          "id": "ITEM-009",
+          "name": "Audio Equipment A",
+          "quantity": 6,
+          "unitPrice": 199.99
+        }
+      ]
+    },
+    {
+      "id": "SH-010",
+      "trackingNumber": "TN123456798",
+      "origin": "Orlando, FL",
+      "destination": "Minneapolis, MN",
+      "status": "Delivered",
+      "shippedDate": "2024-01-10",
+      "estimatedDelivery": "2024-01-13",
+      "actualDelivery": "2024-01-12",
+      "weight": 33.4,
+      "dimensions": "26x22x16",
+      "carrier": "UPS",
+      "priority": "Standard",
+      "customer": "Tourism Services",
+      "items": [
+        {
+          "id": "ITEM-010",
+          "name": "Tourism Package B",
+          "quantity": 8,
+          "unitPrice": 45.75
+        }
+      ]
+    },
+    {
+      "id": "SH-011",
+      "trackingNumber": "TN123456799",
+      "origin": "San Diego, CA",
+      "destination": "Charlotte, NC",
+      "status": "In Transit",
+      "shippedDate": "2024-01-18",
+      "estimatedDelivery": "2024-01-21",
+      "actualDelivery": null,
+      "weight": 19.6,
+      "dimensions": "20x16x10",
+      "carrier": "FedEx",
+      "priority": "Express",
+      "customer": "Biotech Research",
+      "items": [
+        {
+          "id": "ITEM-011",
+          "name": "Lab Equipment C",
+          "quantity": 3,
+          "unitPrice": 299.99
+        }
+      ]
+    },
+    {
+      "id": "SH-012",
+      "trackingNumber": "TN123456800",
+      "origin": "Kansas City, MO",
+      "destination": "Tampa, FL",
+      "status": "Delivered",
+      "shippedDate": "2024-01-09",
+      "estimatedDelivery": "2024-01-12",
+      "actualDelivery": "2024-01-11",
+      "weight": 41.8,
+      "dimensions": "28x24x18",
+      "carrier": "USPS",
+      "priority": "Standard",
+      "customer": "Food Distribution",
+      "items": [
+        {
+          "id": "ITEM-012",
+          "name": "Refrigeration Unit D",
+          "quantity": 1,
+          "unitPrice": 899.99
+        }
+      ]
+    },
+    {
+      "id": "SH-013",
+      "trackingNumber": "TN123456801",
+      "origin": "Cleveland, OH",
+      "destination": "Salt Lake City, UT",
+      "status": "In Transit",
+      "shippedDate": "2024-01-19",
+      "estimatedDelivery": "2024-01-22",
+      "actualDelivery": null,
+      "weight": 26.3,
+      "dimensions": "22x18x14",
+      "carrier": "DHL",
+      "priority": "Standard",
+      "customer": "Manufacturing Inc",
+      "items": [
+        {
+          "id": "ITEM-013",
+          "name": "Industrial Parts E",
+          "quantity": 20,
+          "unitPrice": 12.25
+        }
+      ]
+    },
+    {
+      "id": "SH-014",
+      "trackingNumber": "TN123456802",
+      "origin": "Raleigh, NC",
+      "destination": "Indianapolis, IN",
+      "status": "Delivered",
+      "shippedDate": "2024-01-08",
+      "estimatedDelivery": "2024-01-11",
+      "actualDelivery": "2024-01-10",
+      "weight": 14.7,
+      "dimensions": "16x14x8",
+      "carrier": "UPS",
+      "priority": "Express",
+      "customer": "Pharmaceutical Co",
+      "items": [
+        {
+          "id": "ITEM-014",
+          "name": "Medical Supplies F",
+          "quantity": 15,
+          "unitPrice": 25.50
+        }
+      ]
+    },
+    {
+      "id": "SH-015",
+      "trackingNumber": "TN123456803",
+      "origin": "St. Louis, MO",
+      "destination": "Columbus, OH",
+      "status": "Delivered",
+      "shippedDate": "2024-01-07",
+      "estimatedDelivery": "2024-01-10",
+      "actualDelivery": "2024-01-09",
+      "weight": 31.9,
+      "dimensions": "24x20x16",
+      "carrier": "FedEx",
+      "priority": "Standard",
+      "customer": "Retail Chain",
+      "items": [
+        {
+          "id": "ITEM-015",
+          "name": "Consumer Goods G",
+          "quantity": 25,
+          "unitPrice": 18.75
+        }
+      ]
+    }
+  ],
+  "inventory": [
+    {
+      "id": "INV-001",
+      "name": "Widget A",
+      "sku": "WID-A-001",
+      "category": "Electronics",
+      "stock": 150,
+      "minStock": 50,
+      "maxStock": 500,
+      "unitPrice": 15.99,
+      "supplier": "Tech Supplies Inc",
+      "lastRestocked": "2024-01-10",
+      "status": "Good"
+    },
+    {
+      "id": "INV-002",
+      "name": "Widget B",
+      "sku": "WID-B-002",
+      "category": "Electronics",
+      "stock": 25,
+      "minStock": 50,
+      "maxStock": 200,
+      "unitPrice": 29.99,
+      "supplier": "Global Electronics",
+      "lastRestocked": "2024-01-08",
+      "status": "Low"
+    },
+    {
+      "id": "INV-003",
+      "name": "Widget C",
+      "sku": "WID-C-003",
+      "category": "Hardware",
+      "stock": 0,
+      "minStock": 30,
+      "maxStock": 150,
+      "unitPrice": 12.50,
+      "supplier": "Hardware Plus",
+      "lastRestocked": "2024-01-05",
+      "status": "Out"
+    },
+    {
+      "id": "INV-004",
+      "name": "Widget D",
+      "sku": "WID-D-004",
+      "category": "Electronics",
+      "stock": 75,
+      "minStock": 40,
+      "maxStock": 300,
+      "unitPrice": 45.00,
+      "supplier": "Premium Electronics",
+      "lastRestocked": "2024-01-12",
+      "status": "Good"
+    },
+    {
+      "id": "INV-005",
+      "name": "Widget E",
+      "sku": "WID-E-005",
+      "category": "Hardware",
+      "stock": 12,
+      "minStock": 20,
+      "maxStock": 100,
+      "unitPrice": 75.00,
+      "supplier": "Quality Hardware",
+      "lastRestocked": "2024-01-09",
+      "status": "Low"
+    },
+    {
+      "id": "INV-006",
+      "name": "Engine Component X",
+      "sku": "ENG-X-006",
+      "category": "Automotive",
+      "stock": 8,
+      "minStock": 15,
+      "maxStock": 75,
+      "unitPrice": 125.00,
+      "supplier": "Auto Parts Supply",
+      "lastRestocked": "2024-01-06",
+      "status": "Low"
+    },
+    {
+      "id": "INV-007",
+      "name": "Circuit Board Y",
+      "sku": "CIR-Y-007",
+      "category": "Electronics",
+      "stock": 45,
+      "minStock": 30,
+      "maxStock": 200,
+      "unitPrice": 35.50,
+      "supplier": "Circuit World",
+      "lastRestocked": "2024-01-11",
+      "status": "Good"
+    },
+    {
+      "id": "INV-008",
+      "name": "Solar Panel Z",
+      "sku": "SOL-Z-008",
+      "category": "Energy",
+      "stock": 0,
+      "minStock": 10,
+      "maxStock": 50,
+      "unitPrice": 89.99,
+      "supplier": "Green Energy Supply",
+      "lastRestocked": "2024-01-03",
+      "status": "Out"
+    },
+    {
+      "id": "INV-009",
+      "name": "Audio Equipment A",
+      "sku": "AUD-A-009",
+      "category": "Electronics",
+      "stock": 18,
+      "minStock": 25,
+      "maxStock": 100,
+      "unitPrice": 199.99,
+      "supplier": "Audio Pro",
+      "lastRestocked": "2024-01-07",
+      "status": "Low"
+    },
+    {
+      "id": "INV-010",
+      "name": "Tourism Package B",
+      "sku": "TOU-B-010",
+      "category": "Services",
+      "stock": 120,
+      "minStock": 50,
+      "maxStock": 300,
+      "unitPrice": 45.75,
+      "supplier": "Tourism Partners",
+      "lastRestocked": "2024-01-13",
+      "status": "Good"
+    },
+    {
+      "id": "INV-011",
+      "name": "Lab Equipment C",
+      "sku": "LAB-C-011",
+      "category": "Scientific",
+      "stock": 3,
+      "minStock": 5,
+      "maxStock": 25,
+      "unitPrice": 299.99,
+      "supplier": "Scientific Supply",
+      "lastRestocked": "2024-01-04",
+      "status": "Low"
+    },
+    {
+      "id": "INV-012",
+      "name": "Refrigeration Unit D",
+      "sku": "REF-D-012",
+      "category": "Industrial",
+      "stock": 2,
+      "minStock": 3,
+      "maxStock": 15,
+      "unitPrice": 899.99,
+      "supplier": "Industrial Equipment",
+      "lastRestocked": "2024-01-02",
+      "status": "Low"
+    },
+    {
+      "id": "INV-013",
+      "name": "Industrial Parts E",
+      "sku": "IND-E-013",
+      "category": "Manufacturing",
+      "stock": 85,
+      "minStock": 60,
+      "maxStock": 250,
+      "unitPrice": 12.25,
+      "supplier": "Manufacturing Supply",
+      "lastRestocked": "2024-01-14",
+      "status": "Good"
+    },
+    {
+      "id": "INV-014",
+      "name": "Medical Supplies F",
+      "sku": "MED-F-014",
+      "category": "Healthcare",
+      "stock": 35,
+      "minStock": 40,
+      "maxStock": 150,
+      "unitPrice": 25.50,
+      "supplier": "Medical Supply Co",
+      "lastRestocked": "2024-01-08",
+      "status": "Low"
+    },
+    {
+      "id": "INV-015",
+      "name": "Consumer Goods G",
+      "sku": "CON-G-015",
+      "category": "Retail",
+      "stock": 200,
+      "minStock": 100,
+      "maxStock": 500,
+      "unitPrice": 18.75,
+      "supplier": "Consumer Supply",
+      "lastRestocked": "2024-01-15",
+      "status": "Good"
+    }
+  ],
+  "analytics": {
+    "shipments": {
+      "total": 1234,
+      "inTransit": 456,
+      "delivered": 789,
+      "delayed": 23,
+      "returned": 12
+    },
+    "revenue": {
+      "total": 45231,
+      "thisMonth": 12345,
+      "lastMonth": 10986,
+      "growth": 12.4,
+      "monthlyData": [
+        { "month": "Jan", "revenue": 8500, "expenses": 5950, "profit": 2550 },
+        { "month": "Feb", "revenue": 9200, "expenses": 6440, "profit": 2760 },
+        { "month": "Mar", "revenue": 10500, "expenses": 7350, "profit": 3150 },
+        { "month": "Apr", "revenue": 9800, "expenses": 6860, "profit": 2940 },
+        { "month": "May", "revenue": 11200, "expenses": 7840, "profit": 3360 },
+        { "month": "Jun", "revenue": 10800, "expenses": 7560, "profit": 3240 },
+        { "month": "Jul", "revenue": 11500, "expenses": 8050, "profit": 3450 },
+        { "month": "Aug", "revenue": 11800, "expenses": 8260, "profit": 3540 },
+        { "month": "Sep", "revenue": 12500, "expenses": 8750, "profit": 3750 },
+        { "month": "Oct", "revenue": 13200, "expenses": 9240, "profit": 3960 },
+        { "month": "Nov", "revenue": 12800, "expenses": 8960, "profit": 3840 },
+        { "month": "Dec", "revenue": 13500, "expenses": 9450, "profit": 4050 }
+      ]
+    },
+    "performance": {
+      "onTimeDelivery": 94.2,
+      "averageTransitTime": 3.2,
+      "customerSatisfaction": 4.8,
+      "weeklyData": [
+        { "week": "Week 1", "onTime": 96.5, "delayed": 3.5, "avgTime": 2.8 },
+        { "week": "Week 2", "onTime": 94.2, "delayed": 5.8, "avgTime": 3.1 },
+        { "week": "Week 3", "onTime": 93.8, "delayed": 6.2, "avgTime": 3.3 },
+        { "week": "Week 4", "onTime": 95.1, "delayed": 4.9, "avgTime": 2.9 },
+        { "week": "Week 5", "onTime": 92.7, "delayed": 7.3, "avgTime": 3.5 },
+        { "week": "Week 6", "onTime": 94.8, "delayed": 5.2, "avgTime": 3.0 },
+        { "week": "Week 7", "onTime": 96.2, "delayed": 3.8, "avgTime": 2.7 },
+        { "week": "Week 8", "onTime": 93.5, "delayed": 6.5, "avgTime": 3.4 }
+      ]
+    }
+  },
+  "customers": [
+    {
+      "id": "CUST-001",
+      "name": "Acme Corp",
+      "email": "contact@acmecorp.com",
+      "phone": "+1-555-0101",
+      "address": "123 Business St, New York, NY 10001",
+      "totalOrders": 45,
+      "totalSpent": 12500,
+      "status": "Active"
+    },
+    {
+      "id": "CUST-002",
+      "name": "TechStart Inc",
+      "email": "info@techstart.com",
+      "phone": "+1-555-0102",
+      "address": "456 Innovation Ave, Los Angeles, CA 90210",
+      "totalOrders": 32,
+      "totalSpent": 8900,
+      "status": "Active"
+    },
+    {
+      "id": "CUST-003",
+      "name": "Global Solutions",
+      "email": "hello@globalsolutions.com",
+      "phone": "+1-555-0103",
+      "address": "789 Corporate Blvd, Chicago, IL 60601",
+      "totalOrders": 28,
+      "totalSpent": 6700,
+      "status": "Active"
+    },
+    {
+      "id": "CUST-004",
+      "name": "Innovation Labs",
+      "email": "contact@innovationlabs.com",
+      "phone": "+1-555-0104",
+      "address": "321 Tech Drive, Seattle, WA 98101",
+      "totalOrders": 67,
+      "totalSpent": 18900,
+      "status": "Active"
+    },
+    {
+      "id": "CUST-005",
+      "name": "Mountain Tech",
+      "email": "info@mountaintech.com",
+      "phone": "+1-555-0105",
+      "address": "654 Peak View, Denver, CO 80201",
+      "totalOrders": 23,
+      "totalSpent": 5400,
+      "status": "Active"
+    },
+    {
+      "id": "CUST-006",
+      "name": "Auto Parts Plus",
+      "email": "sales@autopartsplus.com",
+      "phone": "+1-555-0106",
+      "address": "987 Motor Ave, Houston, TX 77001",
+      "totalOrders": 89,
+      "totalSpent": 23400,
+      "status": "Active"
+    },
+    {
+      "id": "CUST-007",
+      "name": "Tech Solutions",
+      "email": "hello@techsolutions.com",
+      "phone": "+1-555-0107",
+      "address": "147 Digital Lane, Atlanta, GA 30301",
+      "totalOrders": 41,
+      "totalSpent": 11200,
+      "status": "Active"
+    },
+    {
+      "id": "CUST-008",
+      "name": "Green Energy Co",
+      "email": "contact@greenenergy.com",
+      "phone": "+1-555-0108",
+      "address": "258 Solar Street, Portland, OR 97201",
+      "totalOrders": 34,
+      "totalSpent": 8900,
+      "status": "Active"
+    },
+    {
+      "id": "CUST-009",
+      "name": "Entertainment Corp",
+      "email": "info@entertainmentcorp.com",
+      "phone": "+1-555-0109",
+      "address": "369 Show Blvd, Las Vegas, NV 89101",
+      "totalOrders": 56,
+      "totalSpent": 15600,
+      "status": "Active"
+    },
+    {
+      "id": "CUST-010",
+      "name": "Tourism Services",
+      "email": "hello@tourismservices.com",
+      "phone": "+1-555-0110",
+      "address": "741 Travel Way, Orlando, FL 32801",
+      "totalOrders": 78,
+      "totalSpent": 20100,
+      "status": "Active"
+    }
+  ],
+  "carriers": [
+    {
+      "id": "CARRIER-001",
+      "name": "FedEx",
+      "rating": 4.5,
+      "averageDeliveryTime": 2.8,
+      "coverage": "Worldwide",
+      "status": "Active",
+      "shipmentsThisMonth": 234,
+      "onTimeRate": 96.2
+    },
+    {
+      "id": "CARRIER-002",
+      "name": "UPS",
+      "rating": 4.3,
+      "averageDeliveryTime": 3.1,
+      "coverage": "Worldwide",
+      "status": "Active",
+      "shipmentsThisMonth": 198,
+      "onTimeRate": 94.8
+    },
+    {
+      "id": "CARRIER-003",
+      "name": "USPS",
+      "rating": 4.0,
+      "averageDeliveryTime": 3.5,
+      "coverage": "Domestic",
+      "status": "Active",
+      "shipmentsThisMonth": 156,
+      "onTimeRate": 92.1
+    },
+    {
+      "id": "CARRIER-004",
+      "name": "DHL",
+      "rating": 4.7,
+      "averageDeliveryTime": 2.5,
+      "coverage": "Worldwide",
+      "status": "Active",
+      "shipmentsThisMonth": 89,
+      "onTimeRate": 97.5
+    }
+  ]
+} 
